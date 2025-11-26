@@ -1,0 +1,59 @@
+.card {
+  width: 260px;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card-bg);
+  position: relative;
+  flex: 0 0 auto;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.4);
+  transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s;
+  display: flex;
+  align-items: stretch;
+}
+
+.thumbWrap {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05) contrast(0.95);
+}
+
+.badgePlay {
+  position: absolute;
+  left: 12px;
+  bottom: 36px;
+  font-size: 20px;
+  background: rgba(0,0,0,0.48);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.cardTitle {
+  position: absolute;
+  left: 12px;
+  bottom: 8px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(2,6,23,0.6);
+}
+
+/* player fills the card */
+.player {
+  width: 100%;
+  height: 100%;
+  background: black;
+}

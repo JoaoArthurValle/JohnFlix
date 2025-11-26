@@ -1,0 +1,28 @@
+:root{
+  --primary-1: #FF0066; /* rosa vibrante */
+  --primary-2: #FF8A00; /* laranja vivo */
+  --accent: #00D4FF;    /* azul turquesa */
+  --dark: #0b0f1a;
+  --card-bg: linear-gradient(135deg, rgba(255,0,102,0.08), rgba(0,212,255,0.04));
+  --glass: rgba(255,255,255,0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
+body {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(255,0,102,0.06), transparent),
+              radial-gradient(1000px 500px at 90% 90%, rgba(0,212,255,0.04), transparent);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* fazia o conteúdo não colar no header */
+.main-wrapper { padding-top: 80px; }
+
+/* utilitários */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}

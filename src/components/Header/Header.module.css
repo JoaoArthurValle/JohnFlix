@@ -1,0 +1,59 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 72px;
+  background: #0a0c14;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  z-index: 100;
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 22px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #e4e7f1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.logoAccent {
+  color: #5bb4ff;
+  margin-left: 4px;
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+}
+
+.navBtn {
+  background: rgba(255, 255, 255, 0.05);
+  color: #e9ecf5;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s;
+}
+
+.navBtn:hover {
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
